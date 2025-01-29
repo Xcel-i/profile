@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , serif;
+}
+
+img{
+  object-fit: contain;
+  width: 20pc;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.8pc;
+  z-index: 100;
+}
+
+button{
+  background-color: rgba(0, 175, 228, 1);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 22px;
+  transition: box-shadow 0.15s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+button>a{
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 175, 228, 0.651);
+}
+
+.profile-card{
+  display: flex;
+  width:80%;
+  margin:100px auto;
+  padding: 10px;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.info{
+  display: inline-block;
+  margin: 10px;
+
+}
+h2{
+  font-size: 40px;
+  font-weight: 500;
+  color: rgba(0, 175, 228, 0.651);
+}
+
+p.work{
+  font-size: 15px;
+  font-weight: 350;
+  width: 160px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 6px;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+p.location{
+  font-weight: bold;
+  display: inline-block;
+}
+p.social{
+  padding: 10px;
+}
+p.social img{
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+hide-details .info{
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+@media only screen and (max-width: 800px){
+  .profile-card{
+    flex-wrap:wrap;
+    justify-content: center;
+    text-align:center;
+  }
+}
